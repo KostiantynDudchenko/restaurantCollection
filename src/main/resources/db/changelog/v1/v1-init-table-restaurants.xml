@@ -1,0 +1,89 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+
+    <changeSet id="insert-restaurants-data" author="DK">
+        <insert tableName="restaurants">
+            <column name="city" value="Moscow"/>
+            <column name="name" value="KFC"/>
+            <column name="estimated_cost" valueNumeric="5000"/>
+            <column name="average_rating" valueNumeric="5.0"/>
+            <column name="votes" valueNumeric="1000"/>
+        </insert>
+        <insert tableName="restaurants">
+            <column name="city" value="Moscow"/>
+            <column name="name" value="KFC"/>
+            <column name="estimated_cost" valueNumeric="4500"/>
+            <column name="average_rating" valueNumeric="4.7"/>
+            <column name="votes" valueNumeric="1000"/>
+        </insert>
+        <insert tableName="restaurants">
+            <column name="city" value="Moscow"/>
+            <column name="name" value="Chicken"/>
+            <column name="estimated_cost" valueNumeric="4000"/>
+            <column name="average_rating" valueNumeric="4.5"/>
+            <column name="votes" valueNumeric="1000"/>
+        </insert>
+        <insert tableName="restaurants">
+            <column name="city" value="Rostov"/>
+            <column name="name" value="Chicken"/>
+            <column name="estimated_cost" valueNumeric="3500"/>
+            <column name="average_rating" valueNumeric="4.0"/>
+            <column name="votes" valueNumeric="1000"/>
+        </insert>
+        <insert tableName="restaurants">
+            <column name="city" value="Rostov"/>
+            <column name="name" value="Tasty"/>
+            <column name="estimated_cost" valueNumeric="3000"/>
+            <column name="average_rating" valueNumeric="3.7"/>
+            <column name="votes" valueNumeric="1000"/>
+        </insert>
+        <insert tableName="restaurants">
+            <column name="city" value="Rostov"/>
+            <column name="name" value="GoodFood"/>
+            <column name="estimated_cost" valueNumeric="2500"/>
+            <column name="average_rating" valueNumeric="4.5"/>
+            <column name="votes" valueNumeric="1000"/>
+        </insert>
+        <insert tableName="restaurants">
+            <column name="city" value="Krasnodar"/>
+            <column name="name" value="Tasty"/>
+            <column name="estimated_cost" valueNumeric="2000"/>
+            <column name="average_rating" valueNumeric="4.3"/>
+            <column name="votes" valueNumeric="1000"/>
+        </insert>
+        <insert tableName="restaurants">
+            <column name="city" value="Krasnodar"/>
+            <column name="name" value="GoodFood"/>
+            <column name="estimated_cost" valueNumeric="1500"/>
+            <column name="average_rating" valueNumeric="2.5"/>
+            <column name="votes" valueNumeric="1000"/>
+        </insert>
+        <insert tableName="restaurants">
+            <column name="city" value="Krasnodar"/>
+            <column name="name" value="Tasty"/>
+            <column name="estimated_cost" valueNumeric="1250"/>
+            <column name="average_rating" valueNumeric="1.5"/>
+            <column name="votes" valueNumeric="1000"/>
+        </insert>
+        <insert tableName="restaurants">
+            <column name="city" value="Adler"/>
+            <column name="name" value="GoodFood"/>
+            <column name="estimated_cost" valueNumeric="1200"/>
+            <column name="average_rating" valueNumeric="3.2"/>
+            <column name="votes" valueNumeric="1000"/>
+        </insert>
+        <insert tableName="restaurants">
+            <column name="city" value="Adler"/>
+            <column name="name" value="Spring"/>
+            <column name="estimated_cost" valueNumeric="1000"/>
+            <column name="average_rating" valueNumeric="4.5"/>
+            <column name="votes" valueNumeric="1000"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>
