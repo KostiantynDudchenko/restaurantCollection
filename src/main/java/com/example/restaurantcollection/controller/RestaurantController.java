@@ -28,7 +28,6 @@ public class RestaurantController {
 
     private final RestaurantService restaurantService;
 
-    //1
     @Operation(
             summary = "Создание ресторана",
             description = "Позволяет добавить ресторан"
@@ -43,7 +42,6 @@ public class RestaurantController {
         return new ResponseEntity<>(restaurantService.createRestaurant(restaurantDTO), HttpStatus.CREATED);
     }
 
-    //2
     @Operation(
             summary = "Обновление рейтинга и глосования ресторана",
             description = "Позволяет установить рейтинг и колличество голосов"
@@ -59,7 +57,6 @@ public class RestaurantController {
         return new ResponseEntity<>(restaurantService.updateAverageRatingAndVotes(id, restaurant), HttpStatus.OK);
     }
 
-    //3
     @Operation(
             summary = "Получение всех ресторанов",
             description = "Позволяет получить все ресторанов"
@@ -69,7 +66,6 @@ public class RestaurantController {
         return ResponseEntity.ok(restaurantService.getAllRestaurants(pageable));
     }
 
-    //4
     @Operation(
             summary = "Получение ресторанов в указанном городе",
             description = "Позволяет получит рестораны в указанном городе"
@@ -82,7 +78,6 @@ public class RestaurantController {
         return ResponseEntity.ok(restaurantService.getRestaurantsByCity(city, pageable));
     }
 
-    //5 TOTO
     @Operation(
             summary = "Получение ресторана по id",
             description = "Позволяет получить ресторан по id"
@@ -93,7 +88,6 @@ public class RestaurantController {
     }
 
 
-    //6
     @Operation(
             summary = "Удаление ресторана",
             description = "Позволяет удалить ресторан"
@@ -105,7 +99,6 @@ public class RestaurantController {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    //7
     @Operation(
             summary = "Получение ресторанов по рейтингу",
             description = "Позволяет получить ресторан по рейтингу начитная с наиболее высокого"

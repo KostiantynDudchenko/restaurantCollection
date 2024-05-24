@@ -2,7 +2,6 @@ package com.example.restaurantcollection.dto;
 
 import com.example.restaurantcollection.dto.transfer.New;
 import com.example.restaurantcollection.dto.transfer.Update;
-import jakarta.persistence.Column;
 import jakarta.validation.constraints.*;
 import lombok.Data;
 

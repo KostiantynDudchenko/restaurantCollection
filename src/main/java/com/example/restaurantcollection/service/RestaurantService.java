@@ -1,7 +1,6 @@
 package com.example.restaurantcollection.service;
 
 import com.example.restaurantcollection.dto.RestaurantDTO;
-import com.example.restaurantcollection.entity.Restaurant;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

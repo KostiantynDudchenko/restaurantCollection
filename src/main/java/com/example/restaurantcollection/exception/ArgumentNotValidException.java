@@ -1,7 +1,6 @@
 package com.example.restaurantcollection.exception;
 
 import lombok.Getter;
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.validation.BindingResult;
 
 @Getter
